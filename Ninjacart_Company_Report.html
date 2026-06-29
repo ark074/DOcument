@@ -23,18 +23,18 @@ h1 { font-size: 16pt; color: #1a5c2e; margin: 20px 0 12px; padding-bottom: 5px; 
 h2 { font-size: 14pt; color: #1a5c2e; margin: 18px 0 10px; }
 h3 { font-size: 12pt; color: #333; margin: 14px 0 8px; }
 h4 { font-size: 11pt; color: #444; margin: 10px 0 6px; }
-.chapter-title { background: #1a5c2e; color: #fff; font-size: 18pt; padding: 12px 20px; margin: -25mm -25mm 20px; padding: 15px 25mm; text-align: center; border: none; }
+.chapter-title { background: none; color: #1a5c2e; font-size: 18pt; padding: 12px 0; margin: 0 0 20px 0; text-align: center; border: none; border-bottom: 3px solid #1a5c2e; font-weight: bold; }
 p { margin-bottom: 12px; text-align: justify; text-indent: 30px; }
 p.no-indent { text-indent: 0; }
 /* Tables */
 table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 10.5pt; }
-th { background: #1a5c2e; color: #fff; padding: 8px 10px; text-align: left; font-size: 10pt; }
+th { background: none; color: #222; padding: 8px 10px; text-align: left; font-size: 10pt; font-weight: bold; border: 1px solid #333; }
 td { padding: 7px 10px; border: 1px solid #ccc; vertical-align: top; }
-tr:nth-child(even) { background: #f4f9f5; }
+tr:nth-child(even) { background: none; }
 .tbl-caption { font-size: 10pt; font-weight: bold; text-align: center; margin: 10px 0 4px; color: #1a5c2e; }
 /* Figures */
 .fig-caption { font-size: 10pt; font-weight: bold; text-align: center; margin: 6px 0 14px; color: #1a5c2e; }
-.flowchart { background: #f7faf8; border: 2px solid #1a5c2e; border-radius: 6px; padding: 18px; margin: 12px 0; font-family: 'Courier New', monospace; font-size: 9pt; overflow-x: auto; white-space: pre; line-height: 1.4; }
+.flowchart { background: #fff; border: 2px solid #333; border-radius: 6px; padding: 18px; margin: 12px 0; font-family: 'Courier New', monospace; font-size: 9pt; overflow-x: auto; white-space: pre; line-height: 1.4; }
 /* TOC */
 .toc-entry { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px dotted #bbb; font-size: 11pt; }
 .toc-ch { font-weight: bold; font-size: 11.5pt; padding-top: 6px; }
@@ -61,222 +61,128 @@ li { margin-bottom: 5px; }
 </style>
 </head>
 <body>
-<!-- === PAGE i: COVER === -->
-<div class="page">
-<div class="cover">
-<img src="https://cdn.brandfetch.io/ninjacart.com/w/400/h/400/logo" alt="Ninjacart Logo" onerror="this.src='https://ninjacart.com/wp-content/uploads/2024/03/ninjacart-logo-new.svg';">
-<p class="fig-caption">Fig. 1: Ninjacart Official Company Logo</p>
-<div class="line"></div>
-<h1>NINJACART</h1>
-<h2>Comprehensive Company Profile &amp; Strategic Analysis Report</h2>
-<div class="line"></div>
-<h3>India's Most Trusted Agritech Brand</h3>
-<h3>63Ideas Infolabs Private Limited</h3>
-<br>
-<p class="no-indent small"><strong>Industry:</strong> Agriculture Technology &amp; Supply Chain Management</p>
-<p class="no-indent small"><strong>Headquarters:</strong> Bengaluru, Karnataka, India</p>
-<p class="no-indent small"><strong>Founded:</strong> June 2015</p>
-<br><br>
-<p class="no-indent smaller">A Project Report</p>
-<p class="no-indent smaller">Report Date: June 2026 | Version 2.0</p>
-</div>
-<span class="page-num">i</span>
-</div>
 
-<!-- === PAGE ii: CERTIFICATE === -->
-<div class="page">
-<br><br><br>
-<h1 style="text-align:center; border:none;">CERTIFICATE</h1>
-<br><br>
-<p>This is to certify that the project report entitled <strong>"Comprehensive Company Profile &amp; Strategic Analysis of Ninjacart (63Ideas Infolabs Private Limited)"</strong> is a bonafide record of work carried out during the academic year 2025-2026.</p>
-<br>
-<p>This report presents a detailed analysis of Ninjacart's business model, supply chain operations, technology infrastructure, financial performance, and strategic positioning in India's agritech ecosystem. The data and information presented in this report have been gathered from authentic and publicly available sources including the company's official website, financial filings, news reports, and industry research publications.</p>
-<br><br><br>
-<table style="border:none; width:100%;">
-<tr style="background:none;">
-<td style="border:none; width:50%;"><strong>Project Guide</strong><br><br><br>Signature: _______________<br>Name:<br>Designation:</td>
-<td style="border:none; width:50%; text-align:right;"><strong>Head of Department</strong><br><br><br>Signature: _______________<br>Name:<br>Designation:</td>
-</tr>
-</table>
-<br><br><br>
-<p class="center"><strong>External Examiner</strong></p>
-<p class="center">Signature: _______________</p>
-<br>
-<p class="center small">Date: _______________</p>
-<p class="center small">Place: _______________</p>
-<span class="page-num">ii</span>
-</div>
-
-<!-- === PAGE iii: DECLARATION === -->
-<div class="page">
-<br><br><br>
-<h1 style="text-align:center; border:none;">DECLARATION</h1>
-<br><br>
-<p>I hereby declare that the project report entitled <strong>"Comprehensive Company Profile &amp; Strategic Analysis of Ninjacart (63Ideas Infolabs Private Limited)"</strong> submitted in partial fulfillment of the requirements for the award of the degree, is a record of original research work done by me under the supervision and guidance of my project guide.</p>
-<br>
-<p>I further declare that the information presented in this report has been collected from authentic publicly available sources and has not been submitted elsewhere for the award of any other degree or diploma.</p>
-<br>
-<p>The data, facts, and figures presented in this document are based on research conducted between January 2026 and June 2026 using publicly available information from Ninjacart's official communications, media reports, industry databases, and financial disclosures.</p>
-<br><br><br><br>
-<p><strong>Student Signature:</strong> _______________</p>
-<br>
-<p><strong>Name:</strong> _______________</p>
-<p><strong>Roll No:</strong> _______________</p>
-<p><strong>Date:</strong> _______________</p>
-<p><strong>Place:</strong> Bengaluru</p>
-<span class="page-num">iii</span>
-</div>
-
-<!-- === PAGE iv: ACKNOWLEDGEMENT === -->
-<div class="page">
-<br><br><br>
-<h1 style="text-align:center; border:none;">ACKNOWLEDGEMENT</h1>
-<br><br>
-<p>I would like to express my sincere gratitude to all those who contributed to the successful completion of this project report on Ninjacart.</p>
-<br>
-<p>First and foremost, I express my heartfelt thanks to my project guide for providing invaluable guidance, continuous encouragement, and constructive criticism throughout the preparation of this report. Their expertise in the field of business analysis and strategic management has been instrumental in shaping this study.</p>
-<br>
-<p>I am grateful to the Head of the Department for providing the necessary infrastructure and resources that facilitated this research. I also extend my gratitude to all faculty members who contributed their knowledge and insights during various stages of this project.</p>
-<br>
-<p>I acknowledge the wealth of information made publicly available by Ninjacart through their official website, blog posts, and media interactions, which formed the foundation of this research. I also thank various media publications including Inc42, Economic Times, Business Today, and others whose reporting provided crucial data points for this analysis.</p>
-<br>
-<p>Special thanks to my family and friends for their unwavering support and encouragement throughout this academic endeavor.</p>
-<br>
-<p>Finally, I thank the Almighty for giving me the strength and perseverance to complete this project successfully.</p>
-<br><br><br>
-<p style="text-align:right;"><strong>Student Name</strong></p>
-<p style="text-align:right;">Date: June 2026</p>
-<span class="page-num">iv</span>
-</div>
-
-<!-- === PAGE v: ABSTRACT === -->
-<div class="page">
-<br><br>
-<h1 style="text-align:center; border:none;">ABSTRACT</h1>
-<br>
-<p>This comprehensive report presents a detailed analysis of Ninjacart (legally registered as 63Ideas Infolabs Private Limited), India's largest and most trusted agritech company specializing in B2B fresh produce supply chain management. Founded in June 2015 in Bengaluru by a team of six entrepreneurs, Ninjacart has grown from a hyperlocal grocery delivery app into a technology-driven agricultural infrastructure platform that moves over 1,500 tonnes of fresh produce daily, connecting more than 1,00,000 farmers to 80,000+ retailers across multiple Indian states.</p>
-<br>
-<p>The report spans ten chapters covering the company's evolution, the Indian agriculture industry landscape, detailed business model analysis, supply chain operations, technology infrastructure, financial performance, and strategic market analysis using frameworks including SWOT Analysis, Porter's Five Forces, PESTEL Analysis, and competitive benchmarking. The study incorporates five detailed flowcharts illustrating the supply chain process, business model architecture, technology stack, organizational structure, and value chain.</p>
-<br>
-<p>Key findings reveal that Ninjacart has achieved remarkable milestones: 74% revenue growth in FY24 crossing Rs 2,002.7 crore, total funding of approximately $406.74 million from investors including Walmart, Flipkart, and Tiger Global, a company valuation near $800 million, and industry-leading operational efficiency with sub-1% spoilage rates compared to the 30-40% industry average. The company's proprietary technology platform achieves 97% demand forecasting accuracy and enables farm-to-retail delivery within 12 hours.</p>
-<br>
-<p>The report concludes that Ninjacart is strategically positioned to capitalize on India's $452 billion agriculture sector transformation, with clear paths toward operational profitability by FY26, international expansion through its Ninja Tech Ventures platform, and long-term potential as the comprehensive operating system for Indian agricultural commerce.</p>
-<br>
-<p class="no-indent"><strong>Keywords:</strong> Ninjacart, Agritech, Supply Chain Management, B2B Platform, Fresh Produce, Agricultural Technology, India, Logistics, AI/ML, Demand Forecasting, Farm-to-Retail</p>
-<span class="page-num">v</span>
-</div>
-
-<!-- === PAGE vi-vii: TABLE OF CONTENTS === -->
+<!-- === PAGE 1: TABLE OF CONTENTS === -->
 <div class="page">
 <h1 style="text-align:center; border:none;">TABLE OF CONTENTS</h1>
 <br>
-<div class="toc-entry toc-ch"><span>Chapter 1: Introduction</span><span>1</span></div>
-<div class="toc-entry toc-sub"><span>1.1 Background of the Study</span><span>1</span></div>
-<div class="toc-entry toc-sub"><span>1.2 Objectives of the Study</span><span>2</span></div>
-<div class="toc-entry toc-sub"><span>1.3 Scope and Limitations</span><span>3</span></div>
-<div class="toc-entry toc-sub"><span>1.4 Research Methodology</span><span>3</span></div>
-<div class="toc-entry toc-ch"><span>Chapter 2: Industry Overview</span><span>4</span></div>
-<div class="toc-entry toc-sub"><span>2.1 Indian Agriculture Sector</span><span>4</span></div>
-<div class="toc-entry toc-sub"><span>2.2 Fresh Produce Supply Chain in India</span><span>5</span></div>
-<div class="toc-entry toc-sub"><span>2.3 India Agritech Market Landscape</span><span>6</span></div>
-<div class="toc-entry toc-sub"><span>2.4 Key Challenges in Agricultural Supply Chain</span><span>7</span></div>
-<div class="toc-entry toc-ch"><span>Chapter 3: Company Profile</span><span>8</span></div>
-<div class="toc-entry toc-sub"><span>3.1 Company Overview</span><span>8</span></div>
-<div class="toc-entry toc-sub"><span>3.2 History and Evolution</span><span>9</span></div>
-<div class="toc-entry toc-sub"><span>3.3 Founders and Leadership Team</span><span>11</span></div>
-<div class="toc-entry toc-sub"><span>3.4 Vision, Mission and Core Values</span><span>12</span></div>
-<div class="toc-entry toc-sub"><span>3.5 Key Milestones</span><span>13</span></div>
-<div class="toc-entry toc-ch"><span>Chapter 4: Business Model</span><span>15</span></div>
-<div class="toc-entry toc-sub"><span>4.1 Business Model Overview</span><span>15</span></div>
-<div class="toc-entry toc-sub"><span>4.2 Revenue Streams</span><span>16</span></div>
-<div class="toc-entry toc-sub"><span>4.3 Value Proposition</span><span>17</span></div>
-<div class="toc-entry toc-sub"><span>4.4 Customer Segments</span><span>18</span></div>
-<div class="toc-entry toc-sub"><span>4.5 Business Model Flowchart</span><span>19</span></div>
-<div class="toc-entry toc-ch"><span>Chapter 5: Supply Chain &amp; Operations</span><span>20</span></div>
-<div class="toc-entry toc-sub"><span>5.1 Supply Chain Overview</span><span>20</span></div>
-<div class="toc-entry toc-sub"><span>5.2 First Mile Operations</span><span>21</span></div>
-<div class="toc-entry toc-sub"><span>5.3 Middle Mile Operations</span><span>22</span></div>
-<div class="toc-entry toc-sub"><span>5.4 Last Mile Delivery</span><span>23</span></div>
-<div class="toc-entry toc-sub"><span>5.5 Reverse Logistics</span><span>24</span></div>
-<div class="toc-entry toc-sub"><span>5.6 Operational Infrastructure</span><span>25</span></div>
-<div class="toc-entry toc-sub"><span>5.7 Supply Chain Process Flowchart</span><span>26</span></div>
-<div class="toc-entry toc-ch"><span>Chapter 6: Technology &amp; Innovation</span><span>27</span></div>
-<div class="toc-entry toc-sub"><span>6.1 Technology Platform Overview</span><span>27</span></div>
-<div class="toc-entry toc-sub"><span>6.2 AI and Machine Learning Applications</span><span>28</span></div>
-<div class="toc-entry toc-sub"><span>6.3 Ninja Vision - Computer Vision AI</span><span>29</span></div>
-<div class="toc-entry toc-sub"><span>6.4 Technology Architecture Flowchart</span><span>30</span></div>
-<div class="toc-entry toc-sub"><span>6.5 Products and Services</span><span>31</span></div>
-<div class="toc-entry toc-ch"><span>Chapter 7: Financial Analysis</span><span>33</span></div>
-<div class="toc-entry toc-sub"><span>7.1 Revenue Performance</span><span>33</span></div>
-<div class="toc-entry toc-sub"><span>7.2 Funding History</span><span>34</span></div>
-<div class="toc-entry toc-sub"><span>7.3 Valuation and Investor Profile</span><span>36</span></div>
-<div class="toc-entry toc-sub"><span>7.4 Path to Profitability</span><span>37</span></div>
-<div class="toc-entry toc-ch"><span>Chapter 8: Market Analysis - SWOT</span><span>38</span></div>
-<div class="toc-entry toc-sub"><span>8.1 SWOT Analysis Framework</span><span>38</span></div>
-<div class="toc-entry toc-sub"><span>8.2 Strengths</span><span>39</span></div>
-<div class="toc-entry toc-sub"><span>8.3 Weaknesses</span><span>40</span></div>
-<div class="toc-entry toc-sub"><span>8.4 Opportunities</span><span>41</span></div>
-<div class="toc-entry toc-sub"><span>8.5 Threats</span><span>42</span></div>
-<div class="toc-entry toc-ch"><span>Chapter 9: Strategic Analysis</span><span>43</span></div>
-<div class="toc-entry toc-sub"><span>9.1 Porter's Five Forces Analysis</span><span>43</span></div>
-<div class="toc-entry toc-sub"><span>9.2 PESTEL Analysis</span><span>45</span></div>
-<div class="toc-entry toc-sub"><span>9.3 Value Chain Analysis</span><span>47</span></div>
-<div class="toc-entry toc-sub"><span>9.4 Competitive Landscape</span><span>49</span></div>
-<div class="toc-entry toc-ch"><span>Chapter 10: Impact, Future &amp; Conclusion</span><span>51</span></div>
-<div class="toc-entry toc-sub"><span>10.1 Social and Economic Impact</span><span>51</span></div>
-<div class="toc-entry toc-sub"><span>10.2 Future Growth Strategy</span><span>52</span></div>
-<div class="toc-entry toc-sub"><span>10.3 Organizational Structure Flowchart</span><span>54</span></div>
-<div class="toc-entry toc-sub"><span>10.4 Conclusion</span><span>55</span></div>
-<div class="toc-entry toc-sub"><span>10.5 Recommendations</span><span>56</span></div>
-<div class="toc-entry toc-ch"><span>References</span><span>57</span></div>
-<span class="page-num">vi</span>
+<table>
+<tr><th>S.No.</th><th>Chapter / Section</th><th>Page No.</th></tr>
+<tr><td></td><td><strong>Chapter 1: Introduction</strong></td><td><strong>1</strong></td></tr>
+<tr><td>1.1</td><td>Background of the Study</td><td>1</td></tr>
+<tr><td>1.2</td><td>Objectives of the Study</td><td>2</td></tr>
+<tr><td>1.3</td><td>Scope and Limitations</td><td>3</td></tr>
+<tr><td>1.4</td><td>Research Methodology</td><td>3</td></tr>
+<tr><td></td><td><strong>Chapter 2: Industry Overview</strong></td><td><strong>4</strong></td></tr>
+<tr><td>2.1</td><td>Indian Agriculture Sector</td><td>4</td></tr>
+<tr><td>2.2</td><td>Fresh Produce Supply Chain in India</td><td>5</td></tr>
+<tr><td>2.3</td><td>India Agritech Market Landscape</td><td>6</td></tr>
+<tr><td>2.4</td><td>Key Challenges in Agricultural Supply Chain</td><td>7</td></tr>
+<tr><td></td><td><strong>Chapter 3: Company Profile</strong></td><td><strong>8</strong></td></tr>
+<tr><td>3.1</td><td>Company Overview</td><td>8</td></tr>
+<tr><td>3.2</td><td>History and Evolution</td><td>9</td></tr>
+<tr><td>3.3</td><td>Founders and Leadership Team</td><td>11</td></tr>
+<tr><td>3.4</td><td>Vision, Mission and Core Values</td><td>12</td></tr>
+<tr><td>3.5</td><td>Key Milestones</td><td>13</td></tr>
+<tr><td></td><td><strong>Chapter 4: Business Model</strong></td><td><strong>15</strong></td></tr>
+<tr><td>4.1</td><td>Business Model Overview</td><td>15</td></tr>
+<tr><td>4.2</td><td>Revenue Streams</td><td>16</td></tr>
+<tr><td>4.3</td><td>Value Proposition</td><td>17</td></tr>
+<tr><td>4.4</td><td>Customer Segments</td><td>18</td></tr>
+<tr><td>4.5</td><td>Business Model Flowchart</td><td>19</td></tr>
+<tr><td></td><td><strong>Chapter 5: Supply Chain &amp; Operations</strong></td><td><strong>20</strong></td></tr>
+<tr><td>5.1</td><td>Supply Chain Overview</td><td>20</td></tr>
+<tr><td>5.2</td><td>First Mile Operations</td><td>21</td></tr>
+<tr><td>5.3</td><td>Middle Mile Operations</td><td>22</td></tr>
+<tr><td>5.4</td><td>Last Mile Delivery</td><td>23</td></tr>
+<tr><td>5.5</td><td>Reverse Logistics</td><td>24</td></tr>
+<tr><td>5.6</td><td>Operational Infrastructure</td><td>25</td></tr>
+<tr><td>5.7</td><td>Supply Chain Process Flowchart</td><td>26</td></tr>
+<tr><td></td><td><strong>Chapter 6: Technology &amp; Innovation</strong></td><td><strong>27</strong></td></tr>
+<tr><td>6.1</td><td>Technology Platform Overview</td><td>27</td></tr>
+<tr><td>6.2</td><td>AI and Machine Learning Applications</td><td>28</td></tr>
+<tr><td>6.3</td><td>Ninja Vision - Computer Vision AI</td><td>29</td></tr>
+<tr><td>6.4</td><td>Technology Architecture Flowchart</td><td>30</td></tr>
+<tr><td>6.5</td><td>Products and Services</td><td>31</td></tr>
+<tr><td></td><td><strong>Chapter 7: Financial Analysis</strong></td><td><strong>33</strong></td></tr>
+<tr><td>7.1</td><td>Revenue Performance</td><td>33</td></tr>
+<tr><td>7.2</td><td>Funding History</td><td>34</td></tr>
+<tr><td>7.3</td><td>Valuation and Investor Profile</td><td>36</td></tr>
+<tr><td>7.4</td><td>Path to Profitability</td><td>37</td></tr>
+<tr><td></td><td><strong>Chapter 8: Market Analysis - SWOT</strong></td><td><strong>38</strong></td></tr>
+<tr><td>8.1</td><td>SWOT Analysis Framework</td><td>38</td></tr>
+<tr><td>8.2</td><td>Strengths</td><td>39</td></tr>
+<tr><td>8.3</td><td>Weaknesses</td><td>40</td></tr>
+<tr><td>8.4</td><td>Opportunities</td><td>41</td></tr>
+<tr><td>8.5</td><td>Threats</td><td>42</td></tr>
+<tr><td></td><td><strong>Chapter 9: Strategic Analysis</strong></td><td><strong>43</strong></td></tr>
+<tr><td>9.1</td><td>Porter's Five Forces Analysis</td><td>43</td></tr>
+<tr><td>9.2</td><td>PESTEL Analysis</td><td>45</td></tr>
+<tr><td>9.3</td><td>Value Chain Analysis</td><td>47</td></tr>
+<tr><td>9.4</td><td>Competitive Landscape</td><td>49</td></tr>
+<tr><td></td><td><strong>Chapter 10: Impact, Future &amp; Conclusion</strong></td><td><strong>51</strong></td></tr>
+<tr><td>10.1</td><td>Social and Economic Impact</td><td>51</td></tr>
+<tr><td>10.2</td><td>Future Growth Strategy</td><td>52</td></tr>
+<tr><td>10.3</td><td>Organizational Structure Flowchart</td><td>54</td></tr>
+<tr><td>10.4</td><td>Conclusion</td><td>55</td></tr>
+<tr><td>10.5</td><td>Recommendations</td><td>56</td></tr>
+<tr><td></td><td><strong>References</strong></td><td><strong>57</strong></td></tr>
+</table>
+<span class="page-num">i</span>
 </div>
 
-<!-- === PAGE vii: LIST OF TABLES === -->
+<!-- === PAGE ii: LIST OF TABLES & FIGURES === -->
 <div class="page">
 <h1 style="text-align:center; border:none;">LIST OF TABLES</h1>
 <br>
-<div class="toc-entry"><span>Table 1.1: Research Methodology Summary</span><span>3</span></div>
-<div class="toc-entry"><span>Table 2.1: India Agriculture Sector Key Statistics</span><span>4</span></div>
-<div class="toc-entry"><span>Table 2.2: India Agritech Market Size &amp; Growth</span><span>6</span></div>
-<div class="toc-entry"><span>Table 2.3: Key Challenges in Fresh Produce Supply Chain</span><span>7</span></div>
-<div class="toc-entry"><span>Table 3.1: Ninjacart Company Profile</span><span>8</span></div>
-<div class="toc-entry"><span>Table 3.2: Founders &amp; Co-Founders Details</span><span>11</span></div>
-<div class="toc-entry"><span>Table 3.3: Leadership Team</span><span>12</span></div>
-<div class="toc-entry"><span>Table 3.4: Key Milestones Timeline</span><span>13</span></div>
-<div class="toc-entry"><span>Table 4.1: Revenue Streams Breakdown</span><span>16</span></div>
-<div class="toc-entry"><span>Table 4.2: Customer Segments</span><span>18</span></div>
-<div class="toc-entry"><span>Table 5.1: Operational Statistics</span><span>25</span></div>
-<div class="toc-entry"><span>Table 6.1: Technology Components</span><span>27</span></div>
-<div class="toc-entry"><span>Table 6.2: Products &amp; Services Portfolio</span><span>31</span></div>
-<div class="toc-entry"><span>Table 7.1: Financial Performance FY21-FY24</span><span>33</span></div>
-<div class="toc-entry"><span>Table 7.2: Funding Rounds Details</span><span>34</span></div>
-<div class="toc-entry"><span>Table 7.3: Key Investors Profile</span><span>36</span></div>
-<div class="toc-entry"><span>Table 8.1: SWOT Analysis Summary Matrix</span><span>38</span></div>
-<div class="toc-entry"><span>Table 9.1: Porter's Five Forces Summary</span><span>43</span></div>
-<div class="toc-entry"><span>Table 9.2: PESTEL Analysis Summary</span><span>45</span></div>
-<div class="toc-entry"><span>Table 9.3: Competitive Comparison</span><span>49</span></div>
-<div class="toc-entry"><span>Table 10.1: Social Impact Metrics</span><span>51</span></div>
-<br><br>
+<table>
+<tr><th>Table No.</th><th>Title</th><th>Page No.</th></tr>
+<tr><td>Table 1.1</td><td>Research Methodology Summary</td><td>3</td></tr>
+<tr><td>Table 2.1</td><td>India Agriculture Sector Key Statistics</td><td>4</td></tr>
+<tr><td>Table 2.2</td><td>India Agritech Market Size &amp; Growth</td><td>6</td></tr>
+<tr><td>Table 2.3</td><td>Key Challenges in Fresh Produce Supply Chain</td><td>7</td></tr>
+<tr><td>Table 3.1</td><td>Ninjacart Company Profile</td><td>8</td></tr>
+<tr><td>Table 3.2</td><td>Founders &amp; Co-Founders Details</td><td>11</td></tr>
+<tr><td>Table 3.3</td><td>Leadership Team</td><td>12</td></tr>
+<tr><td>Table 3.4</td><td>Key Milestones Timeline</td><td>13</td></tr>
+<tr><td>Table 4.1</td><td>Revenue Streams Breakdown</td><td>16</td></tr>
+<tr><td>Table 4.2</td><td>Customer Segments</td><td>18</td></tr>
+<tr><td>Table 5.1</td><td>Operational Statistics</td><td>25</td></tr>
+<tr><td>Table 6.1</td><td>Technology Components</td><td>27</td></tr>
+<tr><td>Table 6.2</td><td>Products &amp; Services Portfolio</td><td>31</td></tr>
+<tr><td>Table 7.1</td><td>Financial Performance FY21-FY24</td><td>33</td></tr>
+<tr><td>Table 7.2</td><td>Funding Rounds Details</td><td>34</td></tr>
+<tr><td>Table 7.3</td><td>Key Investors Profile</td><td>36</td></tr>
+<tr><td>Table 8.1</td><td>SWOT Analysis Summary Matrix</td><td>38</td></tr>
+<tr><td>Table 9.1</td><td>Porter's Five Forces Summary</td><td>43</td></tr>
+<tr><td>Table 9.2</td><td>PESTEL Analysis Summary</td><td>45</td></tr>
+<tr><td>Table 9.3</td><td>Competitive Comparison</td><td>49</td></tr>
+<tr><td>Table 10.1</td><td>Social Impact Metrics</td><td>51</td></tr>
+</table>
+<br>
 <h1 style="text-align:center; border:none;">LIST OF FIGURES</h1>
 <br>
-<div class="toc-entry"><span>Fig. 1: Ninjacart Official Company Logo</span><span>i</span></div>
-<div class="toc-entry"><span>Fig. 2: India Agriculture Contribution to GDP</span><span>5</span></div>
-<div class="toc-entry"><span>Fig. 3: Ninjacart Evolution Timeline</span><span>10</span></div>
-<div class="toc-entry"><span>Fig. 4: Ninjacart Business Model Flowchart</span><span>19</span></div>
-<div class="toc-entry"><span>Fig. 5: Supply Chain Process Flowchart</span><span>26</span></div>
-<div class="toc-entry"><span>Fig. 6: Hub-and-Spoke Logistics Model</span><span>25</span></div>
-<div class="toc-entry"><span>Fig. 7: Technology Architecture Flowchart</span><span>30</span></div>
-<div class="toc-entry"><span>Fig. 8: Revenue Growth Trend</span><span>33</span></div>
-<div class="toc-entry"><span>Fig. 9: Funding Journey Timeline</span><span>35</span></div>
-<div class="toc-entry"><span>Fig. 10: SWOT Analysis Diagram</span><span>38</span></div>
-<div class="toc-entry"><span>Fig. 11: Porter's Five Forces Diagram</span><span>44</span></div>
-<div class="toc-entry"><span>Fig. 12: Value Chain Flowchart</span><span>47</span></div>
-<div class="toc-entry"><span>Fig. 13: Market Position Map</span><span>50</span></div>
-<div class="toc-entry"><span>Fig. 14: Organizational Structure Flowchart</span><span>54</span></div>
-<div class="toc-entry"><span>Fig. 15: Future Growth Strategy Framework</span><span>53</span></div>
-<span class="page-num">vii</span>
+<table>
+<tr><th>Fig. No.</th><th>Title</th><th>Page No.</th></tr>
+<tr><td>Fig. 1</td><td>Ninjacart Official Company Logo</td><td>1</td></tr>
+<tr><td>Fig. 2</td><td>India Agriculture Contribution to GDP</td><td>5</td></tr>
+<tr><td>Fig. 3</td><td>Ninjacart Evolution Timeline</td><td>10</td></tr>
+<tr><td>Fig. 4</td><td>Ninjacart Business Model Flowchart</td><td>19</td></tr>
+<tr><td>Fig. 5</td><td>Supply Chain Process Flowchart</td><td>26</td></tr>
+<tr><td>Fig. 6</td><td>Hub-and-Spoke Logistics Model</td><td>25</td></tr>
+<tr><td>Fig. 7</td><td>Technology Architecture Flowchart</td><td>30</td></tr>
+<tr><td>Fig. 8</td><td>Revenue Growth Trend</td><td>33</td></tr>
+<tr><td>Fig. 9</td><td>Funding Journey Timeline</td><td>35</td></tr>
+<tr><td>Fig. 10</td><td>SWOT Analysis Diagram</td><td>38</td></tr>
+<tr><td>Fig. 11</td><td>Porter's Five Forces Diagram</td><td>44</td></tr>
+<tr><td>Fig. 12</td><td>Value Chain Flowchart</td><td>47</td></tr>
+<tr><td>Fig. 13</td><td>Market Position Map</td><td>50</td></tr>
+<tr><td>Fig. 14</td><td>Organizational Structure Flowchart</td><td>54</td></tr>
+<tr><td>Fig. 15</td><td>Future Growth Strategy Framework</td><td>52</td></tr>
+</table>
+<span class="page-num">ii</span>
 </div>
+
 
 <!-- ============================================================ -->
 <!-- CHAPTER 1: INTRODUCTION (Pages 1-3) -->
