@@ -27,14 +27,14 @@ h4 { font-size: 11pt; color: #000; margin: 8px 0 5px; }
 p { margin-bottom: 8px; text-align: justify; text-indent: 30px; }
 p.no-indent { text-indent: 0; }
 /* Tables */
-table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 10.5pt; }
+table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 10.5pt; page-break-inside: avoid; break-inside: avoid; }
 th { background: none; color: #000; padding: 3px 6px; text-align: left; font-size: 10pt; font-weight: bold; border: 1px solid #333; }
 td { padding: 3px 6px; border: 1px solid #333; vertical-align: top; }
 tr:nth-child(even) { background: none; }
 .tbl-caption { font-size: 10pt; font-weight: bold; text-align: center; margin: 8px 0 3px; color: #000; }
 /* Figures */
 .fig-caption { font-size: 10pt; font-weight: bold; text-align: center; margin: 5px 0 10px; color: #000; }
-.flowchart { background: #fff; border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 10px 0; font-family: 'Courier New', monospace; font-size: 9pt; overflow-x: auto; white-space: pre; line-height: 1.3; color: #000; font-weight: bold; }
+.flowchart { background: #fff; border: 2px solid #333; border-radius: 6px; padding: 12px; margin: 8px 0; font-family: 'Courier New', monospace; font-size: 8pt; overflow-x: auto; white-space: pre; line-height: 1.2; color: #000; font-weight: bold; page-break-inside: avoid; break-inside: avoid; }
 /* TOC */
 .toc-entry { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px dotted #bbb; font-size: 11pt; }
 .toc-ch { font-weight: bold; font-size: 11.5pt; padding-top: 6px; }
@@ -94,7 +94,6 @@ li { margin-bottom: 5px; }
 <tr><td>1.5</td><td>Scope of the Study</td><td>5</td></tr>
 <tr><td>1.6</td><td>Research Methodology</td><td>6</td></tr>
 <tr><td>1.7</td><td>Limitations of the Study</td><td>7</td></tr>
-<tr><td>1.8</td><td>Chapter Scheme</td><td>8</td></tr>
 <tr><td></td><td><strong>Chapter 2: Company Profile of Groww</strong></td><td><strong>9</strong></td></tr>
 <tr><td>2.1</td><td>Company Overview</td><td>9</td></tr>
 <tr><td>2.2</td><td>History and Evolution</td><td>10</td></tr>
@@ -697,12 +696,10 @@ Fig 2.1: Groww Organizational Structure
 </div>
 <p class="fig-caption">Fig 2.1: Groww Organizational Structure</p>
 
-<p>The organization comprises approximately 3,000+ employees across various functions including technology (constituting about 45% of the workforce), operations, compliance, product, marketing, and customer support. The technology-heavy workforce composition reflects Groww's core identity as a technology company operating in financial services.</p>
+<p>The organization comprises approximately 3,000+ employees across various functions including technology (constituting about 45% of the workforce), operations, compliance, product, marketing, and customer support.</p>
 
 <h3>Organizational Design Principles:</h3>
-<p>Groww's organizational structure is guided by several design principles. First, autonomous teams with clear ownership ensure accountability and rapid execution. Each product squad operates with significant independence, owning their roadmap, development, and metrics. Second, cross-functional collaboration is built into the structure through shared services (platform engineering, design system, data science) that support multiple product teams. Third, the compliance and risk functions operate independently with direct board reporting, ensuring regulatory obligations are never compromised for commercial objectives.</p>
-
-<p>The company has offices in Bengaluru (headquarters and primary engineering hub), Mumbai (financial services operations, compliance, and exchange connectivity), and maintains a distributed workforce with significant remote working flexibility. The distributed model has proven effective post-COVID, allowing Groww to access talent from across India while maintaining cultural cohesion through periodic in-person team gatherings and offsites.</p>
+<p>Groww's organizational structure is guided by several design principles: autonomous teams with clear ownership for accountability, cross-functional collaboration through shared services (platform engineering, design system, data science), and independent compliance/risk functions with direct board reporting. The company has offices in Bengaluru (HQ/engineering), Mumbai (financial services/compliance), and maintains a distributed workforce with remote flexibility.</p>
 
 <span class="page-num">15</span>
 </div>
